@@ -11,12 +11,15 @@ From your command line:
     $ gitclone https://github.com/eytanbab/Telegram-Link-Checker-bot
 
 	# Go into the repository
-	cd Telegram-Link-Checker-bot
+	$ cd Telegram-Link-Checker-bot
 
 	# Install dependencies
 	$ npm install
 
 	# Create .env and define tokens from telegram and IPQualityScore
+	$ cat > .env
+	$ TELEGRAM_TOKEN = {telegram_token}
+	$ LINK_CHECK_TOKEN= {ipqualityscore_token}
 	
 	## Run the app
 	$ npm start
