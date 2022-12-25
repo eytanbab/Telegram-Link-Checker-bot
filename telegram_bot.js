@@ -41,5 +41,7 @@ bot.on('message', async (msg) => {
     } else {
       bot.sendMessage(chatId, 'This site is OK :D ');
     }
+  } else {
+    bot.sendMessage(chatId, 'Bad URL');
   }
 });
