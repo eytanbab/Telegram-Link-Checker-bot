@@ -4,7 +4,7 @@ Telegram bot that checks for **malicious** links
 
 # How to use
 
-To clone and run this application, you'll need [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com/)), and [Telegram](https://telegram.org/) installed on your computer. You can get your IPQualityScore API token from [here](https://www.ipqualityscore.com/) .
+To clone and run this bot, you'll need [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com/)), and [Telegram](https://telegram.org/) installed on your computer. You can get your IPQualityScore API token from [here](https://www.ipqualityscore.com/) .
 
 From your command line:
 
