@@ -29,9 +29,9 @@ bot.on('message', async (msg) => {
     return data;
   };
 
-  console.log('Fetching data...');
+  // console.log('Fetching data...');
   let results = await getJSON(url);
-  console.log(results);
+  // console.log(results);
   if (results.message === 'Success.') {
     if (results.risk_score >= 85) {
       bot.sendMessage(
