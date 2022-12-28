@@ -17,7 +17,6 @@ bot.on('message', async (msg) => {
     link_check_token +
     '/' +
     encodeURIComponent(msg.text);
-
   const getJSON = async (url) => {
     const response = await fetch(url);
     if (!response.ok)
@@ -48,6 +47,6 @@ bot.on('message', async (msg) => {
       bot.sendMessage(chatId, 'This site is legitimate and OK to use!');
     }
   } else {
-    bot.sendMessage(chatId, 'Bad URL, please re-enter a valid URL.');
+    bot.sendMessage(chatId, results.message);
   }
 });
