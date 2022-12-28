@@ -35,13 +35,19 @@ bot.on('message', async (msg) => {
   console.log(results);
   if (results.message === 'Success.') {
     if (results.risk_score >= 85) {
-      bot.sendMessage(chatId, 'This site is malicious!');
+      bot.sendMessage(
+        chatId,
+        'This site is malicious! We have strong confidence the URL is malicious.'
+      );
     } else if (results.risk_score >= 75) {
-      bot.sendMessage(chatId, 'This site is suspicious! ');
+      bot.sendMessage(
+        chatId,
+        'This site is suspicious! It has patterns associated with malicious links.'
+      );
     } else {
-      bot.sendMessage(chatId, 'This site is OK :D ');
+      bot.sendMessage(chatId, 'This site is legitimate and OK to use!');
     }
   } else {
-    bot.sendMessage(chatId, 'Bad URL');
+    bot.sendMessage(chatId, 'Bad URL, please re-enter a valid URL.');
   }
 });
